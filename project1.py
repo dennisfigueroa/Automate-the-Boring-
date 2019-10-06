@@ -15,7 +15,8 @@ time.sleep(3)
 website_url = 'https://champion.gg/statistics/#?sortBy=general.winPercent&order=descend&roleSort=ADC'
 browser.get(website_url)
 
-#This deals with the Cookie Acceptance in the initial screen
+#This deals with the Cookie Acceptance in the initial screen, I need to add a conditional statement with a boolean
+#that can determine whether or not the cookie acceptance appears, this prevents any issues if the cookie requirement stops being present
 browser.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/button[2]").click()
 time.sleep(2)
 
